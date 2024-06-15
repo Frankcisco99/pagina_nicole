@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+body{
+    background-color: #ffff;
+    }
+    
+.navbar{
+    background-color: #405559;
+    box-shadow: 1px 7px 5px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 7px 5px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 7px 5px -2px rgba(0,0,0,0.75);
+    padding: 25px;
+display: flex;
+justify-content: flex-end;
+gap: 30px;
+align-items: center;
+    }
+    
+.link-menu{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #EDEDED;
+}
+
+.navbar ul li:hover{
+    color: #3E3E3E;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.menu-celular{
+    display: none;
+}
+.menu-logo{
+    display: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.hide-btn{
+    display: none;
+}
+
+.menu-celular-activo{
+    list-style: none;
+    background-color: #68868C;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #EDEDED;
+}
+.menu-celular-activo li:hover{
+    color: #3E3E3E;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.main-sky{
+    background-color: #CAF4FF;
+}
+.main-dark-sky{
+    background-color: #363062;
+}
+.main-container{
+    width: 100%;
+    height: 400px;
+    background-image: url("./wave.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.sky-img{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 100px;
+    height: 100px;
+}
+.hide-img{
+    display: none;
+}
+.pino-img, .pino-img-2{
+    width: 300px;
+    height: 300px;
+}
+.pino-img{
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+}
+.pino-img-2{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+.main-text{
+    text-align: center;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.main-text h1{
+    font-size: 56px;
+}
+
+.main-text p{
+    width: 50%;
+    margin: auto;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #ce9678;
+    color: #f9fafc;
+    text-transform: uppercase; 
+    width: 15%;
+    margin: auto;
+}
+@media (max-width: 768px){
+    
+    .link-menu{
+        display: none;
+    }
+
+    .menu-logo{
+        display: block;
+    }
+
+}
